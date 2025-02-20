@@ -28,7 +28,7 @@ $darkTheme.addEventListener("click", () => {
 const fetchData = async (query) => {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${query}`
+      `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${query}`
     );
     if (!response.ok) {
       throw new Error("Network response not ok");
