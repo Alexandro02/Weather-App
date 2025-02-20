@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa; /* Soft sky blue (light theme) */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #1a1a1a; /* Dark background */
+  color: #f0f0f0; /* Light text */
+}
+
+.dashboard {
+  background-color: #ffffff; /* White background (light theme) */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-theme .dashboard {
+  background-color: #2d2d2d; /* Darker background for dashboard */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #0077b6; /* Deep blue (light theme) */
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+body.dark-theme .header h1 {
+  color: #00b4d8; /* Lighter blue for dark theme */
+}
+
+.theme-toggle {
+  margin-bottom: 10px;
+}
+
+#theme-button {
+  padding: 8px 16px;
+  background-color: #00b4d8; /* Medium blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+body.dark-theme #theme-button {
+  background-color: #0077b6; /* Darker blue for dark theme */
+}
+
+#theme-button:hover {
+  background-color: #0077b6; /* Darker blue on hover */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#location-input {
+  padding: 10px;
+  border: 1px solid #90e0ef; /* Light blue border (light theme) */
+  border-radius: 5px;
+  width: 70%;
+  font-size: 16px;
+  background-color: #ffffff; /* White background */
+  color: #333;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme #location-input {
+  border-color: #555; /* Darker border for dark theme */
+  background-color: #3d3d3d; /* Dark background */
+  color: #f0f0f0; /* Light text */
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #00b4d8; /* Medium blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+body.dark-theme #search-button {
+  background-color: #0077b6; /* Darker blue for dark theme */
+}
+
+#search-button:hover {
+  background-color: #0077b6; /* Darker blue on hover */
+}
+
+.main-content {
+  text-align: center;
+}
+
+.weather-card {
+  background-color: #f0f8ff; /* Very light blue (light theme) */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-theme .weather-card {
+  background-color: #3d3d3d; /* Dark background for card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#city-name {
+  font-size: 22px;
+  color: #0077b6; /* Deep blue (light theme) */
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+body.dark-theme #city-name {
+  color: #00b4d8; /* Lighter blue for dark theme */
+}
+
+.weather-info p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+  transition: color 0.3s;
+}
+
+body.dark-theme .weather-info p {
+  color: #f0f0f0; /* Light text for dark theme */
+}
+
+#temperature {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00b4d8; /* Medium blue (light theme) */
+  transition: color 0.3s;
+}
+
+body.dark-theme #temperature {
+  color: #00b4d8; /* Same color for consistency */
+}
